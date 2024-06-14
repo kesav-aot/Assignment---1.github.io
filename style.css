@@ -25,6 +25,13 @@ nav {
     justify-content: space-between;
     position: sticky;
     margin:0 100px;
+    width: Fill (1,280px)px;
+height: Hug (72px)px;
+padding: 18px 32px 18px 32px;
+gap: 0px;
+
+opacity: 0px;
+
 }
 
 ul {
@@ -49,13 +56,16 @@ li {
 }
 
 .sss {
-    gap:10;
-    padding-right: 20px;
-    border-radius: 10px ;
-    opacity: 1; /* Changed from 0px to 1 */
+    width: Hug (82px)px;
+    height: Hug (36px)px;
+    padding: 8px 14px 8px 14px;
+    gap: 8px;
+    border-radius:8px;
+    opacity: 0px;
+    color: #FFFFFF;
     background-color: #15B79E;
-    margin-right: 10px;
     margin-left: 10px;
+   
     
 }
 p.sku-p{
@@ -65,17 +75,28 @@ p.sku-p{
     align-items: flex-start;
     font-size: larger;
     font-family: Poppins;
+    font-size: 20px;
 }
 header {
     display: flex;
     justify-content: center;
-    align-items:center;
-    margin: auto;
-    margin-left: 50px;
-    padding: 96px 32px; /* Changed from comma to space */
-    font-size: 20px;
-    text-align: left;
-    margin-right: 0 160px;
+   margin: auto;
+   width: Fill (1,280px)px;
+   height: Hug (768px)px;
+   padding: 96px 32px 96px 32px;
+   gap: 30px;
+   opacity: 0px;
+   margin: 0 160px;
+align-items: center;
+  
+}
+.content{
+    width: Fill (576px)px;
+    height: Hug (300px)px;
+    gap: 48px;
+    opacity: 0px;
+    
+    
 }
 .try{
     width: Hug (171px)px;
@@ -89,7 +110,18 @@ color: #FFFFFF;
 font-family: Poppins;
 
 }
+.try1{
+    width: Hug (171px)px;
+height: Hug (60px)px;
+padding: 16px 28px 16px 28px;
+gap: 12px;
+border-radius: 8px 8px 8px 8px;
+opacity: 0px;
+background-color: #15B79E;
+color: #FFFFFF;
+font-family: Poppins;
 
+}
 .im3 {
     position: relative;
     top: 10px;
@@ -488,6 +520,7 @@ line-height: 24px;
 text-align: left;
 margin: auto;
 flex-wrap: wrap;
+gap:11px;
 
 }
 footer{
@@ -499,6 +532,7 @@ footer{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    align-items: center;
 }
 .display{
     margin: 0 64px;
@@ -506,11 +540,27 @@ footer{
 }
  @media only screen and (max-width: 768px) {
 
-    header,content{
+    header{
         flex-direction: column-reverse;
         flex-wrap: wrap;      
 padding: 0;
 text-align: center;
+margin: 0 64px;
+    }
+.content{
+    margin: 0 ;
+    width: Fill (680px)px;
+height: Hug (192px)px;
+gap: 24px;
+opacity: 0px;
+
+}
+aside{
+    margin-top: 50px;
+}
+    .try1{
+        width: 660px;
+        
     }
     .con{width: 500px;
         height: 500px;
@@ -557,6 +607,14 @@ text-align: center;
        .pro-card{
         margin: 0 64px;
        }
+       .vect{
+        width: 480px;
+height: 12px;
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+
+       }
        .box{
         padding: 0px;
        }
@@ -564,6 +622,16 @@ text-align: center;
         padding: 32px 0;
         text-align: center;
 
+       }
+       .im3{
+        width: 500px;
+height: 500px;
+gap: 0px;
+opacity: 0px;
+
+       }
+       p.sku-p{
+        text-align: center;
        }
   }
   @media only screen and (max-width: 400px) {
@@ -574,16 +642,26 @@ gap: 0px;
 opacity: 0px;
 
     }
+    .sku{
+        width:343px;
+        height: 44px;
+    }
     .content{
         width: Fill (343px)px;
 height: Hug (172px)px;
 gap: 16px;
 opacity: 0px;
+margin-right: 32px;
+justify-content: center;
 
-
+    }
+    .try1{
+        width: 343px;
     }
     header{
         margin: 0;
+        gap: 32px;
+        justify-content: center;
 
     }
     .pro{
@@ -663,12 +741,14 @@ justify-content: left;
     margin: 0;
 }
 .vect{
-    width: 333px;
+    width: 323px;
 }
 footer{
     flex-direction: column;
 }
-
+.sku-p{
+    width: 343px;
+}
 .foott{
     
     font-family: Montserrat;
@@ -678,4 +758,10 @@ line-height: 24.5px;
 text-align: left;
 
 }
+.get{
+    margin: 32px;
+    height: 356px;
+}
   }
+
+ 
