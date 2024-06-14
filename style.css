@@ -455,7 +455,9 @@ margin: 100px 160px;
 
 
 }
-
+.com,.sales,.res,.sup{
+    width: 150px;
+}
 
 .links{
 display: flex;
@@ -464,6 +466,8 @@ width: Fill (789px)px;
 height: Hug (265px)px;
 gap: 32px;
 opacity: 0px;
+margin: 0 20px;
+
 
 }
 .links>ul{
@@ -488,9 +492,11 @@ text-align: left;
 {
     display: block;
     justify-content: left;
-    width: Fill (300.25px)px;
-height: Hug (185px)px;
+    width: Fill (173.25px)px;
+height: Hug (265px)px;
+gap: 21px;
 opacity: 0px;
+
 
 }
 .comp{
@@ -500,6 +506,7 @@ font-weight: 400;
 line-height: 10px;
 text-align: left;
 margin-top: 20px;
+width: 140px;
 
 }
 .com>.li>ul>li{
