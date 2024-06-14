@@ -665,4 +665,17 @@ justify-content: left;
 .vect{
     width: 333px;
 }
+footer{
+    flex-direction: column;
+}
+
+.foott{
+    
+    font-family: Montserrat;
+font-size: 10px;
+font-weight: 500;
+line-height: 24.5px;
+text-align: left;
+
+}
   }
