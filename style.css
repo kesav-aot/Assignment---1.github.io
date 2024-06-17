@@ -11,7 +11,8 @@ nav {
 }
 .menu{
     display: none;
-
+    position: absolute;
+    width: 100%;
 }
 .mn{
     padding: 15px;
@@ -121,8 +122,45 @@ background-color: #15B79E;
 color: #FFFFFF;
 font-family: Poppins;
 
+
 }
+.try1:hover{
+    background-color: #0E9384;
+}
+.try:hover{
+    background-color: #0E9384;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"][name="menu"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: url('./menu.png') no-repeat; /* Path to your image */
+    background-size: contain; /* Adjust the background-size property */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: -340px; /* Adjust position as needed */
+}
+
+/* Checked state style */
+input[type="checkbox"][name="menu"]:checked {
+    background-image: url("./close.png"); /* Path to your checked image */
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+
 .im3 {
+
     position: relative;
     top: 10px;
     display: flex;
@@ -541,9 +579,33 @@ footer{
     border-bottom: 1px solid black;
     align-items: center;
 }
+
 .display{
     margin: 0 64px;
     display: none;
+}
+input[type="checkbox"][name="expand"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: url('./expand_more.png') no-repeat; /* Path to your image */
+    background-size: contain; /* Adjust the background-size property */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: -220px; /* Adjust position as needed */
+}
+input[type="checkbox"][name="expand"]:checked {
+    background-image: url("./expand_less.png"); /* Path to your checked image */
+    background-size: contain;
+    width: 25px;
+    height: 25px;
 }
  @media only screen and (max-width: 768px) {
 
@@ -553,6 +615,7 @@ footer{
 padding: 0;
 text-align: center;
 margin: 0 64px;
+margin-top: 30px;
     }
 .content{
     margin: 0 ;
@@ -567,6 +630,8 @@ aside{
 }
     .try1{
         width: 660px;
+        /* margin-right: 20px; */
+        justify-content: center;
         
     }
     .con{width: 500px;
@@ -602,11 +667,58 @@ aside{
         display: none;
        }
        .menu{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat( 2,1fr);
+        width: Fill (680px)px;
+        gap:0px;
         justify-content: space-between;
+        align-content: space-between;
+        
+        
        }
-       footer{
-        margin: 50px 64px;
+       .type{
+       width: 400px;
+       
+       
+       }
+       .over{
+        width: 300px;
+        height: Hug (36px)px;
+        padding: 6px 32px 6px 42px;
+        gap: 10px;
+        border-radius: 8px 0px 0px 0px;
+        opacity: 0px;
+        }
+       .over:hover{
+        background: #F0FDF9;
+        width: 900px;
+        color: #107569;
+        
+       }
+       .checkbtn{
+        width: Fill (680px)px;
+        
+               }
+       .menulin{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        width: 390px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        align-self:center;
+        position: relative;
+        right: 385px;
+        top:-30px;
+        
+       }
+       input[type="checkbox"]:checked ~ .menulin{
+        height: 100%;
+       }
+       input[type="checkbox"]:checked ~ .more{
+        height: 100%;
        }
        .display{
         display: block;
@@ -614,6 +726,37 @@ aside{
        .pro-card{
         margin: 0 64px;
        }
+       .cy{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+       
+       }
+       .more{
+        display:block;
+        width: 390px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s e;
+        position: relative;
+        right: 45px;   
+        top:-10px;
+        width: Fill (680px)px;
+height: Hug (220px)px;
+
+gap: 12px;
+border: 0px 0px 0.5px 0px;
+opacity: 0px;
+  }
+
+.ex1{
+    gap: 30px;
+    width: 390px;
+}
+       .ex1:hover   {
+        background: #F0FDF9;
+        color: #107569;
+       }
+      
        .vect{
         width: 480px;
 height: 12px;
@@ -640,7 +783,12 @@ opacity: 0px;
        p.sku-p{
         text-align: center;
        }
+  
+  footer{
+    margin: 100px 64px;
+    justify-content: space-between;
   }
+}
   @media only screen and (max-width: 400px) {
     .im3{
         width: 343px;
@@ -648,7 +796,29 @@ height: 343px;
 gap: 0px;
 opacity: 0px;
 
+
+
     }
+
+    input[type=checkbox][name="menu"] {
+       
+        right: -143px;
+        
+    
+    
+      
+      }
+      .menulin{
+       top: -20px;
+        right: 220px;
+        
+       }
+.over{
+    width: 100;
+}
+.type{
+    width: 100%;
+}
     .sku{
         width:343px;
         height: 44px;
@@ -662,6 +832,10 @@ margin-right: 32px;
 justify-content: center;
 
     }
+.cy1{
+    width: 300px;
+}
+
     .try1{
         width: 343px;
     }
@@ -714,8 +888,7 @@ justify-content: left;
     header
 {
     padding: 0%;
-    margin: 0;
-}
+margin-top: 60px;}
 .im6{
     width:300px;
     height: 300px;
@@ -752,23 +925,49 @@ justify-content: left;
 }
 footer{
     flex-direction: column;
+    justify-content: center;
+    width: Fill (343px)px;
+height: Hug (98px)px;
+padding: 16px 0px 16px 0px;
+gap: 12px;
+opacity: 0px;
+margin: 0 32px;
 }
 .sku-p{
     width: 343px;
 }
+
+
+input[type=checkbox][name="expand"] {
+       
+    right: 100px;
+    
+
+
+  
+  }
+
+
 .foott{
     
-    font-family: Montserrat;
+font-family: Montserrat;
 font-size: 10px;
 font-weight: 500;
 line-height: 24.5px;
 text-align: left;
+width: 200px;
 
 }
 .get{
     margin: 32px;
     height: 356px;
 }
+.subfooter{
+    width: 100%;
+    margin: 0 ;
+    justify-content: left;
+}.display
+{margin: 0 32px ;
   }
-
+  }
  
