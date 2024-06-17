@@ -751,12 +751,15 @@ opacity: 0px;
 .ex1{
     gap: 30px;
     width: 390px;
+    margin-top: 10px;
 }
        .ex1:hover   {
         background: #F0FDF9;
         color: #107569;
        }
-      
+      .ex{
+        margin: 0;
+      }
        .vect{
         width: 480px;
 height: 12px;
