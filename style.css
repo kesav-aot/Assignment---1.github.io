@@ -1,6 +1,10 @@
 body {
-    margin: 0;
-    top: 0;
+    margin: auto;
+    width: 1440px;
+}
+.container{
+    /* max-width: 1360px; */
+    margin: 0 auto;
 }
 
 nav {
@@ -109,7 +113,18 @@ header {
 
 
 }
-
+.im4,.grid{
+    max-width: 50%;
+}
+.get{
+    max-width: 1280px;
+}
+.main{
+    max-width: 1280px;
+}
+.subfooter{
+    max-width: 1280px;
+}
 .try {
     width: Hug (171px)px;
     height: Hug (60px)px;
@@ -121,6 +136,9 @@ header {
     color: #FFFFFF;
     font-family: Poppins;
 
+}
+header{
+    max-width: 1280px;
 }
 
 .try1 {
@@ -826,7 +844,7 @@ input[type="checkbox"][name="expand"]:checked {
         height: 0;
         grid-column: 1/span 3;
         overflow: hidden;
-        transition: all 0.5s e;
+        transition: all 0.3s ease;
         position: relative;
         right: 45px;
         top: -10px;
