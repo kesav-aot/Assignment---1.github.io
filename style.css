@@ -20,7 +20,9 @@ nav {
 .im {
     padding: 15px;
 }
-
+li{
+    font-family: Poppins;
+}
 .head {
     display: flex;
     justify-content: space-between;
@@ -752,6 +754,7 @@ opacity: 0px;
     gap: 30px;
     width: 390px;
     margin-top: 10px;
+    font-family: Poppins;
 }
        .ex1:hover   {
         background: #F0FDF9;
