@@ -944,13 +944,19 @@ margin: 0 32px;
 
 input[type=checkbox][name="expand"] {
        
-    right: 100px;
+    right:30px;
     
 
 
   
   }
-
+.menulin{
+    width: 360px;
+    right: 0px;
+}
+.more{
+    width: 360px;
+}
 
 .foott{
     
